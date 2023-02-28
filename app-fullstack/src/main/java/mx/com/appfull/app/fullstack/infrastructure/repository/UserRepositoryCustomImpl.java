@@ -7,5 +7,5 @@ package mx.com.appfull.app.fullstack.infrastructure.repository;
  * @since 2022-02/28
  */
 
-public class UserRespositoryCustomImpl implements UserRespositoryCustom{
+public class UserRepositoryCustomImpl implements UserRepositoryCustom {
 }

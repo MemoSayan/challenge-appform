@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
  * @since 2022-02/28
  */
 @Repository
-public interface UserRespositoryCustom {
+public interface UserRepositoryCustom {
 }
