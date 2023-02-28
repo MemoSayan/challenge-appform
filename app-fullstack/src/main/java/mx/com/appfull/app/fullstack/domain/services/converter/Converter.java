@@ -22,7 +22,7 @@ public class Converter {
         return dto;
     }
 
-    public User toEntity(UserDTO employee) {
+    public User toEntity(UserDTO user) {
         if (user == null) {
             return null;
         }

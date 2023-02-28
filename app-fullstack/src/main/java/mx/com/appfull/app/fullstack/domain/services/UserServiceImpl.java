@@ -16,30 +16,33 @@ import java.util.List;
 @NoArgsConstructor
 public class UserServiceImpl implements UserService {
 
-   @Autowired
+    @Autowired
     private UserRepository userRespository;
 
-   @Autowired
-   private Converter convertir;
+    @Autowired
+    private Converter convertir;
 
     @Override
     public List<UserDTO> findAll() {
-    List<User> userList = userRespository.findAll();
+        List<User> userList = userRespository.findAll();
         return convertir.toDtoList(userList);
     }
 
     @Override
     public UserDTO save(UserDTO userDTO) {
-        return null;
+        User user = convertir.toEntity(userDTO);
+        userRespository.save(user);
+        return userDTO;
     }
 
     @Override
     public void delete(Long id) {
-
+        userRespository.deleteById(id);
     }
 
     @Override
     public UserDTO findById(Long id) {
-        return null;
+        User user = userRespository.findById(id).orElse(null);
+        return convertir.toDto(user);
     }
 }

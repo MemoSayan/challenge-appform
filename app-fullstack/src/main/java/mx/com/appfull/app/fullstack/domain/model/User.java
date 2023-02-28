@@ -13,7 +13,7 @@ import mx.com.appfull.app.fullstack.domain.base.EntityBase;
 @Entity
 @Getter
 @Setter
-@Table(name = "employee")
+@Table(name = "users_validated")
 public class User extends EntityBase {
 
     @NotEmpty
