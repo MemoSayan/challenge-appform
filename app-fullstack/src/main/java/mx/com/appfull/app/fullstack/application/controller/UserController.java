@@ -22,4 +22,5 @@ private static final Logger LOGGER= LoggerFactory.getLogger(UserController.class
     public List<UserDTO> index() {
         return userService.findAll();
     }
+
 }

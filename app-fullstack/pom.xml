@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>mx.com.appfull</groupId>
-	<artifactId>app-fullstack</artifactId>
+	<artifactId>backend-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>app-fullstack</name>
 	<description>Demo project for Spring Boot</description>
