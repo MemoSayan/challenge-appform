@@ -41,7 +41,7 @@ public class UserServiceImpl implements UserService {
         User user = convertir.toEntity(userDTO);
         userRespository.save(user);
         String token = tokenGenerator.generateString(userDTO.getName(), userDTO.getLastName());
-        LOGGER.info(token);
+        LOGGER.info("token : " + token);
         userDTO.setToken(token);
         return userDTO;
     }
