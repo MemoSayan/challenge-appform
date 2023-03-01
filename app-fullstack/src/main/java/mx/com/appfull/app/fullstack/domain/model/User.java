@@ -32,4 +32,6 @@ public class User extends EntityBase {
     @Size(min = 5, max = 10)
     private String phone;
 
+    private String token;
+
 }
