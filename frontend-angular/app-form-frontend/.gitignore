@@ -8,6 +8,8 @@
 
 # Node
 /node_modules
+/frontend-angular/node_modules
+challenge-appform/frontend-angular/app-form-frontend/node_modules
 npm-debug.log
 yarn-error.log
 
